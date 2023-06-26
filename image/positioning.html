@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style> 
+    body{
+        height: 4000px
+
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+    .container{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: #c4c4c4;
+    }
+        #box-1{
+            background-color: aquamarine ;
+            position: relative;
+            top: 50px;
+            left: 50px;
+             z-index: 1; /*  if you use a negative z-index the background will move behind */ 
+
+             /* the z-index property specifies the stack order of an element.
+             note: z-index only work on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct to children of display: flex elements) .
+             Note: if two positioned elements positioned last in the HTML code will be shown on top. 
+             the z-index is used to move an element one more step behind or one step closer
+             */
+
+        }
+        #box-2{
+        background-color: rgb(255, 223, 127);
+        top: 100px;    
+        left: 100px;
+        position: absolute;
+        }
+
+        #box-3{
+         background-color: rgb(13, 167,233);
+         bottom: 100px;
+         right: 100px;
+         position: absolute;   
+        }
+        #box-4{
+            background-color: rgb(114, 167,233);
+            position: fixed;
+            bottom: 1;
+
+        }
+        #box-5{
+            background-color: rgb(15, 194, 241);
+            position: sticky;
+            top: 0;
+            z-index: -1;   
+        }
+
+    </style>
+</head>
+<body>
+<div id="box-1" class="box"></div>
+<div class="container">
+    <di id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>  
+</div>
+<div id="box-4" class="box"></div>
+<div id="box-5" class="box"></div>
+</body>
+</html>

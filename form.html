@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>form styling</title>
+    />
+ <style>
+/* body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+    #container{
+        background-color: #344a72;
+        max-width:200px;
+        width: 100%;
+        padding: 40px; 
+        margin: auto;
+
+    }
+     
+    .form-wrap{
+        background-color: white;
+    }
+     
+    .form-wrap h1 .form-wrap{
+        text-align: center;
+    }
+
+    .form-wrap{
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-color: #f3f3f3;
+        padding: 40px;
+    }
+    
+    .form-group{
+        position: relative;
+        margin-bottom: 15px;    
+    }
+
+    .form-warp .form-group label{
+        display: block;
+    }
+
+    .form-wrap .form-group input{
+        width: 100%;
+        padding: 10px;
+    }
+    .form-warp button{
+    display: block;
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: cornflowerblue;
+    }
+
+    .form-warp button :hover {
+        background-color: #37a08e;
+    
+    }
+
+    .form-warp .bottom-text {
+        font-size: smaller;
+    }
+    footer {
+        text-align: center;
+    }
+
+    footer a {
+        color: #49c1a2;
+    } */
+
+
+  #container { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content:center; 
+    align-items: center; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #344a72; 
+    border-radius: 10px; 
+    font-family: sans-serif;
+    }
+
+.form-wrap { 
+    width: 100%; 
+    max-width: 200px; 
+    margin: 0 auto; 
+    background-color: #f3f3f3; 
+    padding: 40px; 
+    border-radius: 10px;
+    }
+
+.form-group { 
+    position:relative;
+    margin-bottom: 15px;
+    } 
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #909090;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="password"] { 
+    width: 100%; 
+    height: 40px; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    color: #555;
+    padding-left: 10px;
+    }
+
+.btn { 
+    display: block;
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: cornflowerblue; 
+}
+
+.btn:hover {
+    background-color: #3774b4;
+    color: #3774b4;
+}
+
+.bottom-text { 
+    font-size: 14px;
+    color: #909090; 
+    padding-top: 15px;
+    text-align: center;
+}
+
+a { 
+    text-decoration: underline;
+    }
+    
+footer { 
+    font-size: 14px;
+    color: #909090; 
+    padding-top: 10px;
+    text-align: center;
+}
+
+a { 
+    text-decoration: underline;
+    }
+
+ </style>
+   
+</head>
+<body>
+    <div id="container"> 
+    <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+        <form> 
+
+        <div class="form-group">
+            <label for="first-name">First Name</label> 
+            <input type="text" name="firstName" id="first-name" />
+    
+    </div>
+    <div class="form-group">
+        <label for="Other-name">Other-Name</label>
+        <input type="text" name="last-Name" id="firs-name" />  
+    </div>
+
+    <div class="form-group">
+    <label for="Last-name">Last-name</label>
+    <input type="text" name="Last-Name" id="LAste-Name" />    
+    </div>
+
+    <div class="form-group">
+    <label for="password">password</label>
+    <input type="password" name="pasword" id="password" />
+    </div>
+
+    <div class="form-group">
+        <label for="password2">confirm password</label>
+        <input type="password" name="password2" id="password2" />
+    </div>
+    <button type="submit" class="btn">sign up</button>
+    <p class="bottom-text">By clicking the sign up botton, you agree to our 
+        <a href="#">Terms & Conditions</a> and <a href="#">privacy policy</a>
+        </p>
+      </form>
+    </div>
+    <footer>
+        <p>Already have an account? <a href="#">login Here (Good luck)</a></p>
+     </footer>
+    </div>
+</body>
+</html>
